@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+<body>
+    <script>
+
+        // Making a constructor...
+        class Students {
+            // Passing arguments...
+            constructor(name,father,age,id,caste,city) {
+                // declaring properties...
+                this.name = name;
+                this.father = father;
+                this.age = age;
+                this.id = id;
+                this.caste = caste;
+                this.city = city;
+            }
+            // Creating a method...
+            text() {
+                return `This is ${this.name} S/O ${this.father} whose id and cast is ${this.id} and ${this.caste}, he lives in ${this.city}`;
+            }
+        }
+        // Printing main constructor...
+        console.log(Students);
+
+        // Making a new object through constructor...
+        const student1 = new Students('Mohsin', 'Ameer', '25', '0700', 'Sheikh', 'Karachi');
+
+        // Printing above object...
+        console.log(student1);
+        
+        // Printing method of main object with the properties of newly created object...
+
+        console.log(student1.text());
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Interpolation</title>
+</head>
+<body>
+
+
+
+
+
+<script>
+
+    // Before ES6
+    // const num1 = 7;
+    // const num2 = 3;
+
+    // let ans = function() {
+    //     return num1+num2;
+    // }
+    // console.log(ans());
+
+    
+
+    // Custom Interpolations...
+
+    // let res = `The sum is ${num1+num2}`;
+    // console.log(res);
+
+    // console.log(`The sum is ${num1-num2}
+    // and further more it reserves spaces and line-breakes`);
+
+
+
+
+
+
+    // let n1 = 5;
+    // let n2 = 2;
+
+    // const message2 = `The sum is ${sum(n1, n2)}`;
+    // console.log(message2);
+
+    // Raw String Access
+        // Ex:01
+
+        // const filePath = `C:\Development\profile\aboutme.html`;
+        // console.log(`The file was uploaded from: ${filePath}`);
+
+
+        // Ex:02
+        
+        // 2.Raw String Access (KEYWORD)
+        // String.raw()
+
+        // (normally)
+        // console.log('Working');
+        // console.log(`\u2605`);
+        // //Returns --> ★
+
+        // // (but using this keyword)
+        // var a = String.raw`\u2605`
+        // console.log(a);
+        // // //Returns --> \u2605
+        
+
+        // Practice from MDN...
+        // EX # 01
+        // let ex = String.raw`Hi\n${2+2}!`;
+        // console.log(ex);
+
+        // // EX # 02
+        // let ex2 = String.raw`Hi\u0700`;
+        // console.log(ex2);
+        // console.log(ex2.length);
+
+        // All kinds of escape characters will be ineffective
+        // and backslashes will be present in the output string.
+
+        // Perfect Alhamdulillah....
+</script>
+</body>
+</html>

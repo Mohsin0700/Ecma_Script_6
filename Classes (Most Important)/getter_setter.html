@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getter and setter</title>
+</head>
+<body>
+    <script>
+        // This is how we add a getter in classes / objects during initialization.
+        // class Vehicle {
+        //     constructor(regNo, make, mode, user) {
+        //         this.regNo = regNo,
+        //         this.make = make,
+        //         this.mode = mode,
+        //         this.user = user
+        //     }
+        //     get getInfo() {
+        //         return `This vehicle is made by ${this.make} in ${this.mode}, it's registraion number is ${this.regNo} and it is being used by ${this.user}`;
+        //     }
+        // }
+        // console.log(Vehicle);
+        // const Vehicle1 = new Vehicle('SPB-788', 'Honda', '2018', 'SIP Hakim Ali');
+        // console.log(Vehicle1);
+
+        // console.log(Vehicle1.getInfo);
+    
+
+
+        // Now we'll see how can we add getter later on...
+        // let obj = {
+        //     name: 'Mohsin',
+        //     age:25
+        // }
+        // Object.defineProperty(obj, 'print', {get() {return `${this.name} is ${this.age} years old`}});
+
+        // console.log(obj.print); 
+    
+    
+        // *****************************************
+        //          Here our getter is done
+        // *****************************************
+
+        class Person {
+            constructor(name) {
+                this.name = name;
+            }
+        // getter
+            get personName() {
+                return this.name;
+            }
+        // setter
+            set personName(x) {
+                this.name = x;
+            }
+        }
+
+
+    let person1 = new Person('Jack');
+    console.log(person1.name); // Jack
+
+    // changing the value of name property
+    // person1.personName = 'Sarah';
+    person1.name = 'Mohsin';
+    console.log(person1.name); // Sarah
+
+
+
+
+    // *****************************************
+    //          Now We'll Learn Setter
+    // *****************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

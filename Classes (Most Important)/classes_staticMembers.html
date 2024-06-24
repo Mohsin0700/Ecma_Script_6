@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Members</title>
+</head>
+<body>
+    <script>
+        // class Student  {
+        //     constructor(name,father){
+        //         this.name = name;
+        //         this.father = father;
+        //     }
+        //     print() {
+        //         console.log(`${this.name} Bin ${this.father}`);
+        //     }
+        // }
+
+        // let st1 = new Student('Mohsin', 'Ameer');
+        // let st2 = new Student('Arbab', 'Ameer');
+        // st1.print();
+        
+        // Static Members...
+        class Student  {
+            constructor(name,father){
+                this.name = name;
+                this.father = father;
+            }
+            static print() {
+                console.log(`${this.name} Bin ${this.father}`);
+            }
+        }
+        let st1 = new Student();
+        console.log(st1);
+
+        // Method created with static keyword never be copied...
+
+    </script>
+</body>
+</html>

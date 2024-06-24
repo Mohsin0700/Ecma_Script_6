@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring Assignments</title>
+</head>
+<body>
+    <script>
+          // **********************************************
+         //             (01)   Array Matching...
+        // ************************************************
+
+        // let positions = ['Mohsin', 'Arbab', 'Muzammil'];
+        // let [firstPos, secondPos, thirdPos] = positions;
+        // console.log(firstPos);
+        // console.log(secondPos);
+        // console.log(thirdPos);
+
+        // [firstPos, secondPos, thirdPos] = [thirdPos, secondPos, firstPos];
+        // console.log(firstPos);
+        // console.log(secondPos);
+        // console.log(thirdPos);
+
+          // **********************************************
+         //  (02)   Object Mathcing Shorthand Notations.
+        // ************************************************
+
+        // const obj = {
+        //     name: 'Mohsin',
+        //     father: 'Ameer',
+        //     age: 25
+        // }
+        // console.log(obj.age,obj.name,obj.father);
+
+          // const {name,father,age} = obj; ||Perfect
+         // const [name,father,age] = obj; will retrund an error
+        // console.log(name,father,age);
+        
+
+          // **********************************************
+         //    (03)    Object Matching Deep Mathcing.
+        // ************************************************
+
+
+        // const obj = {
+        //     op: 'Mohsin',
+        //     lhs: {
+        //         op: 'Arbab'
+        //     },
+        //     rhs: 'Ali'
+        // }
+        // Before ES6
+        // let tmp = obj;
+        // let a = tmp.op;
+        // let b = tmp.lhs.op;
+        // let c = tmp.rhs;
+        // console.log(a,b,c);
+
+        // After ES5
+        // let {op:a, lhs:{op:b}, rhs:c} = obj;
+        // console.log(a,b,c);
+
+
+          // **********************************************
+         //    (04)    Object And Array Matching Default Values...
+        // ************************************************
+
+        // let obj1 = {a:1}
+        // let {a, b = 2} = obj1;
+        // console.log(a,b);
+
+        // let arr = [1];
+        // let [d,c=3] = arr;
+        // console.log(d,c);
+        
+
+        // **********************************************
+         //    (05)    Parameter Context Matching
+        // ************************************************
+
+        // let name = 'Mohsin';
+        // let father = 'Ameer';
+        // let age = 25;
+        // let arr = [name,father,age];
+        // const myFunc = (arr) => {
+        //     console.log(name,father,age);
+        // }
+        // myFunc();
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

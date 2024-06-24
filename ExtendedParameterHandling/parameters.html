@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extended Parameter Handling</title>
+</head>
+<body>
+
+    <script>
+        // Default Parameters...
+        // const sum = (x, y=2) => x + y;
+        // console.log(sum(1));
+
+        // const sum2 = (x, y=1, z=3) => x + y + z;
+        // console.log(sum2(2));
+
+        // Rest Parameters...
+        
+        // const sum3 = (x, y, ...z) => {
+        //     let ans = 0;
+        //     z.forEach(val => {
+        //         ans += val;
+        //     });
+        //     return x + y + ans;
+        // }
+        // console.log(sum3(2, 2, 3, 4));
+
+        
+
+        // const sum3 = (a,b, ...c) => {
+        //     return (a + b) * c.length;
+        // }
+        // console.log(sum3(1,1, true, false, "mohsin"));
+
+
+        // Spread Operators...
+        // let array1 = ["Mohsin", "Arbab", "Ali"];
+        // console.log(array1);
+
+        // let array2 = ["Ameer Hussain", "Shabbir Hasan", ...array1];
+        // console.log(array2);
+
+        // let array3 = [...array1, ...array2];
+        // console.log(array3);
+
+        // let aString = "Mohsin";
+        // console.log(aString);
+        // let convertIntoArray = [...aString];
+        // console.log(convertIntoArray);
+
+          // ****************************** \\
+         //      Default Parameters          \\
+        //      *********************         \\
+        
+        // function sum(a,b, c=3) {
+        //     return ((a*b) + c);
+        // }
+        // alert(sum(6,2))
+
+        // **************************
+        // Rest Parameters
+        // **************************
+
+        // function sum(a,b,...c) {
+        //     let sum = 0;
+        //     for(let i of c) {
+        //         sum += i;
+        //     }
+        //     return sum + (a*b);
+        // }
+        // alert(sum(6,2,5,2,2,1,2,1));
+        
+        
+
+
+
+
+
+
+    </script>
+</body>
+</html>

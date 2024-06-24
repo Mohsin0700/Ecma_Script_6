@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+    <script>
+        // let num = 1;
+        // console.log('First num', num);
+
+        // num = 2;
+        // setTimeout(() => {
+        //     console.log('Second num', num);
+        // }, 2000);
+
+        // num = 3;
+        // console.log('Third num', num);
+        // The problem here is that setTimeout is taking too much time due to it, js is loading third statement before second but we're not getting perfect result as we wanted to get.
+
+
+
+
+
+
+
+        // Let us do some exercise of promises.
+        let num = 1;        
+        const func1 = () => {
+            console.log('This is First Function and it will produce 1',num);
+        }
+        func1();
+
+        num = 2;
+        let func2 = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                if (num === 2) {
+                    resolve('This is second function and it will produce 2')
+                } else {
+                    reject('Sorry Some issues occured')
+                }
+                
+            });
+         })
+         
+        func2.then((x) => {
+            console.log(x, num);
+        }).catch((y) => {
+            console.log(y);
+        })
+
+        num = 3;
+        const func3 = () => {
+            console.log('This is third function and it will print 3', num);
+        }
+        func3();
+
+        
+    </script>
+</body>
+</html>

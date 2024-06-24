@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring Assignment</title>
+</head>
+<body>
+    <script>
+        // *****(01) Array Matching*****\\
+        
+        // let arr = [1,2,3,4,5,6,7,8,9];
+        // console.log(arr);
+        // let [num1, num2, num3] = arr;
+        // console.log(num1);
+        // console.log(num3);
+        // console.log(num2);
+
+        // // Swapping Variables.
+        // let [num1, num2] = arr;
+        // console.log(num1, num2);
+        // [num1, num2] = [num2, num1];
+        // console.log(num1, num2);
+
+        // SUMMARY || We can easily make variables of array's Value... Furthermore we can easily swap values.
+
+
+
+
+
+        // *****(02) Object Matching Shorthand Notations*****\\
+
+        // let obj = {
+        //     name: 'Mohsin',
+        //     father: 'Ameer',
+        //     age: 25
+        // }
+
+        // let {name, father, age} = obj;
+        // console.log(obj);
+        // console.log(name);
+        // console.log(father);
+        // console.log(age);
+        
+        // SUMMARY...
+        // To assign the value of an array to variables we use [];
+        // And to assign the value of an object to variables we use {};
+        
+
+        // **********(03) Object matching, Deep Matching**********\\
+
+        // let obj1 = {
+        //     name: {
+        //         first: 'Mohsin',
+        //         last: 'Hussain'
+        //     },
+        //     age: 25
+        // }
+        // console.log(obj1.name.first, obj1.name.last);
+        // *&*&*&*& Will see it later *&*&*&*&*&*&*&*&
+
+
+        // **********(04) Object and array matching default values**********\\
+        // Summary.
+        // It's very easy, it is same as, as we give default values to paramaters in a function...
+        // var obj = { a: 1 }
+        // var list = [ 1 ]
+        // var { a, b = 2 } = obj
+        // var [ x, y = 2 ] = list
+
+        // **********(05) Parameter Context Matching**********\\
+        
+        // Playing with array...
+        // const a = ([name, age]) => console.log(name,age);
+        // a(['Mohsin', 25]);
+        // a(['Arbab', 23]);
+        
+        // Playing with objects...
+        // const b = ({name:n, age: v}) => console.log(n,v);
+        
+        // b({name: 'Mohsin', age:25});
+        // b({name: 'Arbab', age:23});
+
+        // Playing again with objects...
+        // const c = ({name, age}) => console.log(name, age);
+        // c({name:'Mohsin', age:25});
+
+
+        // **********(06) Fail-Soft Destructing**********\\
+        // Very Simple can be seen at es6 feutures.org 
+        // in Distructuring Assignment. Fail-Soft Destructuring...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

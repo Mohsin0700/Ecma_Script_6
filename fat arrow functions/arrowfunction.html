@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions</title>
+</head>
+<body>
+    <h1>I've learned how to make arrow functions...</h1>
+    <script>
+    //     let name = "Hamza";
+    //     let father = "Nadeem";
+    //     let mother = "Fakhra";
+    // const greet = (x, y, z) => {
+    //     console.dir(x + " says salam to " + y + " and " + z);
+    // }
+    // greet(name, father, mother);
+
+
+    // let num1 = 4;
+    // let num2 = 3;
+    
+    // const sum = (x,y) => x + y;
+    // console.log(sum(num1,num2));
+
+    // console.log(sum(2,2));
+
+    // Arrow Function Lexical This...
+    // will be taught by sir Ishaq (later)...
+    // let obj = {
+    //     name: "Mohsin",
+    //     num: 03433440700,
+    //     func: () =>  {
+    //         console.log(this);
+    //     }
+    // }
+    // obj.func();
+    
+
+
+    // ***** Lexical This ***** \\
+    
+    // const name = {
+    //     test() {
+    //         let self = this;
+    //         setTimeout(function(){
+    //             console.log(self);
+    //         },2000)
+    //         // console.log(this);
+    //     },
+    // };
+
+    // name.test();
+
+
+
+    // const name = {
+    //     test() {
+    //         setTimeout(()=> {
+    //             console.log(this);
+    //         },2000);
+    //     },
+    // };
+
+    // name.test();
+
+
+
+    // const obj = {
+    //     name: 'Mohsin',
+    //      age: 25,
+    //     print(){
+    //         console.log(this.name);
+    //     },
+    //     print2(){
+    //         let name = 'Arbab';
+    //         setTimeout(()=>{
+    //             console.log(this.name);
+    //         },5000)
+    //     }
+    // };
+
+    // obj.print2();
+    
+    // *****************************************
+    // SUMMARY OF LEXICAL THIS
+    // *****************************************
+
+    // (1) (this) is built in method of jS
+    // (2) (this) is always attached differently with each   new function
+    // (3) Every function has it's own this.
+    // (4) In an arrow function (this) for every inner function is always similar which is parent's (this).
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
